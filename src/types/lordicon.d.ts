@@ -1,3 +1,4 @@
+// eslint-disable-next-line @typescript-eslint/no-empty-object-type
 interface LordIconElement extends HTMLElement {
   playerInstance?: {
     play: () => void;
@@ -19,7 +20,7 @@ interface LordIconElement extends HTMLElement {
   };
 }
 
-declare namespace JSX {
+declare namespace React.JSX {
   interface IntrinsicElements {
     "lord-icon": React.DetailedHTMLProps<
       React.HTMLAttributes<LordIconElement>,
