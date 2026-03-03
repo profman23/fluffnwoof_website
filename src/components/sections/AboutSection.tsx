@@ -8,7 +8,7 @@ export function AboutSection() {
   const t = useTranslations("about");
 
   return (
-    <section id="about" className="relative bg-secondary-light py-20 md:py-28">
+    <section id="about" className="relative overflow-hidden bg-secondary-light py-20 md:py-28">
       {/* Decorative blob */}
       <div className="absolute end-0 top-0 h-64 w-64 rounded-full bg-secondary/30 blur-3xl" />
       <div className="absolute bottom-0 start-0 h-48 w-48 rounded-full bg-primary/10 blur-3xl" />
