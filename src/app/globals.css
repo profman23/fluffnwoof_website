@@ -1,0 +1,142 @@
+@import "tailwindcss";
+
+/* ===== Fluff N' Woof Brand Theme ===== */
+@theme inline {
+  /* Brand Colors */
+  --color-primary: #F5DF59;
+  --color-primary-light: #FFF9D6;
+  --color-primary-dark: #D4BF2E;
+  --color-secondary: #CEE8DC;
+  --color-secondary-light: #E8F5EE;
+  --color-secondary-dark: #9DCBB5;
+  --color-accent: #EAB8D5;
+  --color-accent-light: #F5DDE9;
+  --color-accent-dark: #D48DB8;
+  --color-dark: #211E1F;
+  --color-dark-light: #3A3536;
+  --color-white: #FDFEFF;
+
+  /* Gray Scale */
+  --color-gray-50: #F8F9FA;
+  --color-gray-100: #F0F1F3;
+  --color-gray-200: #E0E2E5;
+  --color-gray-300: #C8CBCF;
+  --color-gray-400: #9EA3A9;
+  --color-gray-500: #6B7280;
+  --color-gray-600: #4B5563;
+  --color-gray-700: #374151;
+
+  /* Fonts */
+  --font-en: var(--font-din-next), sans-serif;
+  --font-ar-heading: var(--font-ge-dinar), sans-serif;
+  --font-ar-body: var(--font-din-next-arabic), sans-serif;
+
+  /* Shadows */
+  --shadow-card: 0 4px 24px rgba(33, 30, 31, 0.06);
+  --shadow-card-hover: 0 8px 40px rgba(33, 30, 31, 0.12);
+  --shadow-navbar: 0 2px 16px rgba(33, 30, 31, 0.05);
+
+  /* Animations */
+  --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ===== Base Styles ===== */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  background: var(--color-white);
+  color: var(--color-dark);
+  font-family: var(--font-en);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  isolation: isolate;
+}
+
+/* ===== Fixed Pattern Background ===== */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image: url("/images/pattern.svg");
+  background-repeat: repeat;
+  background-size: 450px;
+  background-position: center;
+  opacity: 0.07;
+}
+
+/* Direction-aware font assignment */
+[dir="rtl"] body {
+  font-family: var(--font-ar-body);
+}
+
+[dir="ltr"] body {
+  font-family: var(--font-en);
+}
+
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3,
+[dir="rtl"] h4 {
+  font-family: var(--font-ar-heading);
+}
+
+/* ===== Custom Scrollbar ===== */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-gray-100);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary-dark);
+}
+
+/* ===== Selection ===== */
+::selection {
+  background: var(--color-primary);
+  color: var(--color-dark);
+}
+
+/* ===== Marquee Animation ===== */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* ===== WhatsApp Glow Animation ===== */
+@keyframes whatsapp-glow {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5), 0 4px 16px rgba(37, 211, 102, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 0 14px rgba(37, 211, 102, 0), 0 4px 16px rgba(37, 211, 102, 0.3);
+  }
+}
+
+.whatsapp-float-btn {
+  animation: whatsapp-glow 2s ease-in-out infinite;
+}

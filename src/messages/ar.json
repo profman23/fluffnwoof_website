@@ -1,0 +1,170 @@
+{
+  "metadata": {
+    "title": "فلف أن ووف | مستشفى بيطري تخصصي في الرياض",
+    "description": "مستشفى فلف أن ووف البيطري التخصصي - صحة أليفك ودلاله بين أيدي أمينة. عمليات بيطرية، تطعيمات، قرومنق، فندقة، تحاليل وأشعة في الرياض."
+  },
+  "nav": {
+    "home": "الرئيسية",
+    "services": "خدماتنا",
+    "about": "قصتنا",
+    "testimonials": "آراء العملاء",
+    "contact": "تواصل معنا",
+    "bookNow": "احجز الآن"
+  },
+  "hero": {
+    "badge": "مستشفى فلف أن ووف البيطري التخصصي",
+    "title": "صحة أليفك ودلاله",
+    "titleHighlight": "بين أيدي أمينة",
+    "slogan": "أليفك عنايتنا",
+    "cta": "احجز موعدك الآن",
+    "whatsappMessage": "مرحباً، أود حجز موعد في مستشفى فلف أن ووف"
+  },
+  "services": {
+    "sectionTitle": "خدماتنا",
+    "sectionSubtitle": "نقدم مجموعة متكاملة من الخدمات البيطرية المتخصصة",
+    "surgery": {
+      "title": "العمليات",
+      "description": "جراحونا المهرة ينفذون مجموعة واسعة من الإجراءات بدقة عالية باستخدام مرافق متقدمة مستوردة من ألمانيا",
+      "bullets": [
+        "جراحات الأنسجة الرخوة",
+        "الجراحات العظمية",
+        "عمليات التعقيم",
+        "جراحات الأسنان",
+        "إجراءات طب العيون",
+        "الجراحات المتعلقة بالأورام"
+      ],
+      "cta": "احصل على استشارة الآن"
+    },
+    "clinics": {
+      "title": "العيادات",
+      "description": "علاج الأمراض والإصابات مع توفير فحوصات دورية ورعاية طبية متقدمة لحيوانك الأليف",
+      "bullets": [
+        "فحص طبي شامل",
+        "إعداد الوثائق الخاصة بالسفر",
+        "علاجات عامة للأمراض والإصابات",
+        "الرعاية الوقائية ومنها زرع الشرائح الإلكترونية وإزالة الديدان"
+      ],
+      "cta": "احصل على استشارة الآن"
+    },
+    "vaccinations": {
+      "title": "التطعيمات",
+      "description": "التطعيمات الأساسية لضمان صحة وحماية حيوانك الأليف",
+      "bullets": [
+        "نوفر التطعيمات الأساسية وغير الأساسية بناءً على عمر حيوانك الأليف وأسلوب حياته واحتياجاته الصحية",
+        "تطعيمات روتينية أو متطلبات خاصة بالسفر"
+      ],
+      "cta": "احصل على استشارة الآن"
+    },
+    "grooming": {
+      "title": "القرومنق",
+      "description": "دلل حيوانك الأليف بتجديد مظهره مع فريقنا المحترف للعناية، باستخدام منتجات آمنة ومخصصة للحيوانات الأليفة",
+      "bullets": [
+        "جلسات استرخاء (سبا)",
+        "قصات شعر",
+        "غسيل وتنظيف"
+      ],
+      "cta": "احجز الآن ودلل أليفك"
+    },
+    "petHotel": {
+      "title": "الفندقة",
+      "description": "تجربة إقامة مميزة لحيوانك الأليف في فندقنا المصمم خصيصًا لراحته وسلامته",
+      "bullets": [
+        "غرف مخصصة مصممة لتوفير أقصى درجات الراحة والرفاهية",
+        "متوافقة مع معايير AKC (نادي مربي الكلاب الأمريكي)",
+        "إشراف خبراء مختصين لضمان الصحة والسلامة"
+      ],
+      "cta": "احجز الآن ودلل أليفك"
+    },
+    "labRadiology": {
+      "title": "التحاليل والأشعة",
+      "description": "استخدام التكنولوجيا المتقدمة لتقديم تشخيصات دقيقة وتطوير خطط علاج فعّالة",
+      "bullets": [
+        "اختبار مستوى الأجسام المضادة لداء الكلب (للسفر الدولي)",
+        "اختبارات الحساسية",
+        "الاختبارات الجينية",
+        "الفحص النسيجي المرضي",
+        "زراعة البكتيريا",
+        "الدراسات الفيروسية",
+        "الأشعة السينية",
+        "الموجات فوق الصوتية",
+        "تخطيط صدى القلب"
+      ],
+      "cta": "احصل على استشارة الآن"
+    },
+    "fluffyWheels": {
+      "title": "فلفي ويلز",
+      "description": "في عيادتنا، ندرك أن نقل أليفك قد يكون أحيانًا تحديًا. لهذا السبب نقدم لكم خدمة فلفي ويلز Fluffy Wheels، وهي خدمة نقل مريحة للحيوانات الأليفة مصممة لجعل إيصال أليفكم إلينا أكثر سهولة وخالية من التوتر.",
+      "extendedDescription": "سواء كان أليفكم بحاجة إلى جلسة تجميل، أو فحص طبي، أو تطعيم، أو إجراءات جراحية، أو حتى إقامة مؤقتة، يضمن فريقنا وصولهم بأمان وراحة. تم تجهيز مركباتنا بشكل خاص لتوفير رحلة مريحة لحيواناتكم الأليفة.",
+      "bullets": [],
+      "cta": "احجز الآن ودلل أليفك"
+    }
+  },
+  "about": {
+    "sectionTitle": "قصتنا",
+    "story": "فلَف أند ووف هي حلم لطبيب بشري من محبين الحيوانات ومربي شغوف، لطالما تمنى أن يجد الخدمة البيطرية المتقدمة التي تليق بصديقه الأليف الذي خسره بسبب خطأ بيطري خلال سنته الأولى في كلية الطب.",
+    "storyExtended": "مما شجعه على افتتاح مستشفى بيطري يرتقي إلى معايير جودة المستشفيات البشرية لتقدم أحدث وأطور طرق العلاج التي وصلها العلم. وشعارنا هو \"أليفك عنايتنا\".",
+    "topClinic": "نحن نفخر بأننا من أفضل",
+    "topClinicHighlight": "3 عيادات في المملكة!",
+    "stats": {
+      "years": { "value": "15", "suffix": "+", "label": "سنة خبرة" },
+      "reviews": { "value": "600", "suffix": "+", "label": "تقييم 5 نجوم" },
+      "happyPets": { "value": "5500", "suffix": "+", "label": "أليف سعيد" },
+      "surgeries": { "value": "1000", "suffix": "+", "label": "عملية ناجحة" }
+    }
+  },
+  "testimonials": {
+    "sectionTitle": "آراؤكم تسعدنا",
+    "items": [
+      {
+        "text": "They are great with humans and pets! Both my dogs were neutered here and they had a very healthy and fast recovery. When my cat got sick I also got him here and he was very well taken care of.",
+        "name": "Hend Saleh",
+        "rating": 5,
+        "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face"
+      },
+      {
+        "text": "I had my cat checked for his leg, and the vet was really nice and easy to talk to, For the grooming services, it was awesome as well! The place was also very neat, and smelled really nice. I definitely recommend this place.",
+        "name": "Chantelle Reyes",
+        "rating": 5,
+        "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face"
+      },
+      {
+        "text": "The best clinic with excellent care. Dr Momen is a very professional & honest doctor. Mocha our dog is his patient from long time. He did a deep teeth cleaning for Mocha, now she has the Hollywood Smile!",
+        "name": "Alia Al Monla",
+        "rating": 5,
+        "image": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100&h=100&fit=crop&crop=face"
+      },
+      {
+        "text": "Always will be my 1st vet, professional staff and great customer experience. They are not looking out for your money more than taking care of your pet. My 1st choice all the time!",
+        "name": "Riyadh Almazyad",
+        "rating": 5,
+        "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face"
+      }
+    ]
+  },
+  "contact": {
+    "sectionTitle": "تواصل معنا",
+    "addressLabel": "العنوان",
+    "address": "الرياض، حي القيروان، شارع الأمير عبدالله بن سعود",
+    "phoneLabel": "رقم التواصل",
+    "phone": "0534429329",
+    "hoursLabel": "مواعيد الدوام",
+    "hours": {
+      "weekdays": {
+        "days": "السبت - الأحد - الاثنين - الأربعاء - الخميس",
+        "time": "من 9 صباحاً حتى 12 منتصف الليل"
+      },
+      "tuesday": {
+        "days": "الثلاثاء",
+        "time": "من 12 ظهراً حتى 12 منتصف الليل"
+      },
+      "friday": {
+        "days": "الجمعة",
+        "time": "من 4 عصراً حتى 12 منتصف الليل"
+      }
+    }
+  },
+  "footer": {
+    "copyright": "© 2026 فلف أن ووف. جميع الحقوق محفوظة.",
+    "slogan": "أليفك عنايتنا"
+  }
+}

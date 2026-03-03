@@ -1,0 +1,170 @@
+{
+  "metadata": {
+    "title": "Fluff N' Woof | Specialized Veterinary Hospital in Riyadh",
+    "description": "Fluff N' Woof Specialized Veterinary Hospital - Your pet's health and pampering in trusted hands. Veterinary surgeries, vaccinations, grooming, boarding, lab & radiology in Riyadh."
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "Our Story",
+    "testimonials": "Reviews",
+    "contact": "Contact",
+    "bookNow": "Book Now"
+  },
+  "hero": {
+    "badge": "Fluff N' Woof Specialized Veterinary Hospital",
+    "title": "Your Pet's Health & Pampering",
+    "titleHighlight": "In Trusted Hands",
+    "slogan": "Your Pet, Our Care",
+    "cta": "Book Your Appointment Now",
+    "whatsappMessage": "Hello, I would like to book an appointment at Fluff N' Woof"
+  },
+  "services": {
+    "sectionTitle": "Our Services",
+    "sectionSubtitle": "We offer a comprehensive range of specialized veterinary services",
+    "surgery": {
+      "title": "Surgeries",
+      "description": "Our skilled surgeons perform a wide range of procedures with high precision using advanced facilities imported from Germany",
+      "bullets": [
+        "Soft tissue surgeries",
+        "Orthopedic surgeries",
+        "Sterilization procedures",
+        "Dental surgeries",
+        "Ophthalmology procedures",
+        "Oncology-related surgeries"
+      ],
+      "cta": "Get a Consultation Now"
+    },
+    "clinics": {
+      "title": "Clinics",
+      "description": "Treatment of diseases and injuries with regular check-ups and advanced medical care for your pet",
+      "bullets": [
+        "Comprehensive medical examination",
+        "Travel documentation preparation",
+        "General treatments for diseases and injuries",
+        "Preventive care including microchip implantation and deworming"
+      ],
+      "cta": "Get a Consultation Now"
+    },
+    "vaccinations": {
+      "title": "Vaccinations",
+      "description": "Essential vaccinations to ensure the health and protection of your pet",
+      "bullets": [
+        "We provide core and non-core vaccinations based on your pet's age, lifestyle, and health needs",
+        "Routine vaccinations or special travel requirements"
+      ],
+      "cta": "Get a Consultation Now"
+    },
+    "grooming": {
+      "title": "Grooming",
+      "description": "Pamper your pet with a fresh new look from our professional grooming team, using safe and pet-specific products",
+      "bullets": [
+        "Spa relaxation sessions",
+        "Haircuts",
+        "Washing and cleaning"
+      ],
+      "cta": "Book Now & Pamper Your Pet"
+    },
+    "petHotel": {
+      "title": "Pet Hotel",
+      "description": "A premium boarding experience for your pet in our hotel specially designed for their comfort and safety",
+      "bullets": [
+        "Custom rooms designed for maximum comfort and luxury",
+        "Compliant with AKC (American Kennel Club) standards",
+        "Supervised by specialized experts for health and safety"
+      ],
+      "cta": "Book Now & Pamper Your Pet"
+    },
+    "labRadiology": {
+      "title": "Lab & Radiology",
+      "description": "Using advanced technology to provide accurate diagnostics and develop effective treatment plans",
+      "bullets": [
+        "Rabies antibody titer test (for international travel)",
+        "Allergy tests",
+        "Genetic tests",
+        "Histopathology examination",
+        "Bacterial culture",
+        "Viral studies",
+        "X-rays",
+        "Ultrasound",
+        "Echocardiography"
+      ],
+      "cta": "Get a Consultation Now"
+    },
+    "fluffyWheels": {
+      "title": "Fluffy Wheels",
+      "description": "At our clinic, we understand that transporting your pet can sometimes be a challenge. That's why we offer Fluffy Wheels, a convenient pet transportation service designed to make getting your pet to us easier and stress-free.",
+      "extendedDescription": "Whether your pet needs a grooming session, medical check-up, vaccination, surgical procedures, or even a temporary stay, our team ensures they arrive safely and comfortably. Our vehicles are specially equipped to provide a comfortable journey for your pets.",
+      "bullets": [],
+      "cta": "Book Now & Pamper Your Pet"
+    }
+  },
+  "about": {
+    "sectionTitle": "Our Story",
+    "story": "Fluff N' Woof is the dream of a physician who is an animal lover and passionate breeder. He always wished to find advanced veterinary care worthy of his beloved pet, whom he lost due to a veterinary error during his first year in medical school.",
+    "storyExtended": "This inspired him to open a veterinary hospital that rises to the quality standards of human hospitals, offering the latest and most advanced treatment methods that science has achieved. Our motto is \"Your Pet, Our Care\".",
+    "topClinic": "We are proud to be among the top",
+    "topClinicHighlight": "3 clinics in the Kingdom!",
+    "stats": {
+      "years": { "value": "15", "suffix": "+", "label": "Years of Experience" },
+      "reviews": { "value": "600", "suffix": "+", "label": "5-Star Reviews" },
+      "happyPets": { "value": "5500", "suffix": "+", "label": "Happy Pets" },
+      "surgeries": { "value": "1000", "suffix": "+", "label": "Successful Surgeries" }
+    }
+  },
+  "testimonials": {
+    "sectionTitle": "What Our Clients Say",
+    "items": [
+      {
+        "text": "They are great with humans and pets! Both my dogs were neutered here and they had a very healthy and fast recovery. When my cat got sick I also got him here and he was very well taken care of.",
+        "name": "Hend Saleh",
+        "rating": 5,
+        "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face"
+      },
+      {
+        "text": "I had my cat checked for his leg, and the vet was really nice and easy to talk to, For the grooming services, it was awesome as well! The place was also very neat, and smelled really nice. I definitely recommend this place.",
+        "name": "Chantelle Reyes",
+        "rating": 5,
+        "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face"
+      },
+      {
+        "text": "The best clinic with excellent care. Dr Momen is a very professional & honest doctor. Mocha our dog is his patient from long time. He did a deep teeth cleaning for Mocha, now she has the Hollywood Smile!",
+        "name": "Alia Al Monla",
+        "rating": 5,
+        "image": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100&h=100&fit=crop&crop=face"
+      },
+      {
+        "text": "Always will be my 1st vet, professional staff and great customer experience. They are not looking out for your money more than taking care of your pet. My 1st choice all the time!",
+        "name": "Riyadh Almazyad",
+        "rating": 5,
+        "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face"
+      }
+    ]
+  },
+  "contact": {
+    "sectionTitle": "Contact Us",
+    "addressLabel": "Address",
+    "address": "Riyadh, Al Qayrawan, Prince Abdullah bin Saud Street",
+    "phoneLabel": "Phone",
+    "phone": "0534429329",
+    "hoursLabel": "Working Hours",
+    "hours": {
+      "weekdays": {
+        "days": "Sat - Sun - Mon - Wed - Thu",
+        "time": "9:00 AM to 12:00 AM"
+      },
+      "tuesday": {
+        "days": "Tuesday",
+        "time": "12:00 PM to 12:00 AM"
+      },
+      "friday": {
+        "days": "Friday",
+        "time": "4:00 PM to 12:00 AM"
+      }
+    }
+  },
+  "footer": {
+    "copyright": "© 2026 Fluff N' Woof. All rights reserved.",
+    "slogan": "Your Pet, Our Care"
+  }
+}
