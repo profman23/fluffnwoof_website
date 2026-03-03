@@ -20,4 +20,6 @@ export const NAV_SECTIONS = [
 ] as const;
 
 export const GOOGLE_MAPS_EMBED_URL =
-  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.0!2d46.6!3d24.8!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDQ4JzAwLjAiTiA0NsKwMzYnMDAuMCJF!5e0!3m2!1sen!2ssa!4v1700000000000!5m2!1sen!2ssa";
+  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.0!2d46.5637068!3d24.8259773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2ee75bfd6ccc73%3A0x7e080049e95ad6f!2sFluff%20N'%20Woof%20Specialist%20Veterinary!5e0!3m2!1sen!2ssa!4v1700000000000!5m2!1sen!2ssa";
+
+export const GOOGLE_MAPS_LINK = "https://maps.app.goo.gl/Xvc8TM3kw57n8eV57";

@@ -2,7 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
-import { WHATSAPP_BASE_URL, GOOGLE_MAPS_EMBED_URL } from "@/lib/constants";
+import { WHATSAPP_BASE_URL, GOOGLE_MAPS_EMBED_URL, GOOGLE_MAPS_LINK } from "@/lib/constants";
 
 export function ContactSection() {
   const t = useTranslations("contact");
@@ -17,7 +17,7 @@ export function ContactSection() {
           <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
         </svg>
       ),
-      href: "https://maps.google.com/?q=Riyadh+Al+Qayrawan",
+      href: GOOGLE_MAPS_LINK,
     },
     {
       label: t("phoneLabel"),
