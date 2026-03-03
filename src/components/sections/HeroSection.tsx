@@ -102,7 +102,7 @@ export function HeroSection() {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
-          className="relative"
+          className="relative pb-4 pe-4"
         >
           <div className="relative overflow-hidden rounded-2xl shadow-xl">
             <video
@@ -118,7 +118,7 @@ export function HeroSection() {
             <div className="absolute inset-0 bg-gradient-to-t from-dark/10 to-transparent" />
           </div>
           {/* Decorative accent behind video */}
-          <div className="absolute -bottom-4 -end-4 -z-10 h-full w-full rounded-2xl bg-primary/20" />
+          <div className="absolute bottom-0 end-0 -z-10 h-full w-full rounded-2xl bg-primary/20" />
         </motion.div>
       </div>
     </section>

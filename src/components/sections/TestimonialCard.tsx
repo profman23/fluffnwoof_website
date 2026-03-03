@@ -14,7 +14,7 @@ export function TestimonialCard({
   image,
 }: TestimonialCardProps) {
   return (
-    <div className="flex w-[350px] shrink-0 flex-col rounded-2xl border border-gray-100 bg-white p-6 shadow-[0_4px_24px_rgba(33,30,31,0.06)] md:w-[400px]">
+    <div className="flex w-[85vw] min-w-[280px] max-w-[350px] shrink-0 flex-col rounded-2xl border border-gray-100 bg-white p-6 shadow-[0_4px_24px_rgba(33,30,31,0.06)] md:w-[400px] md:max-w-[400px]">
       {/* Stars */}
       <div className="mb-3 flex gap-1">
         {Array.from({ length: rating }).map((_, i) => (

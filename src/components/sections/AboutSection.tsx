@@ -65,7 +65,7 @@ export function AboutSection() {
           {/* Decorative pattern area */}
           <ScrollReveal direction="left">
             <div className="relative flex items-center justify-center">
-              <div className="relative h-80 w-80 md:h-96 md:w-96">
+              <div className="relative h-80 w-80 overflow-hidden md:h-96 md:w-96">
                 {/* Pattern circle */}
                 <div
                   className="absolute inset-0 rounded-full opacity-10"

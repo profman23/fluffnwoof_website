@@ -27,7 +27,7 @@ export function FloatingWhatsApp() {
         </svg>
 
         {/* Tooltip */}
-        <span className="pointer-events-none absolute -start-20 top-1/2 -translate-y-1/2 whitespace-nowrap rounded-lg bg-dark px-3 py-1.5 text-xs font-medium text-white opacity-0 shadow-md transition-opacity duration-200 group-hover:opacity-100">
+        <span className="pointer-events-none absolute -start-20 top-1/2 hidden -translate-y-1/2 whitespace-nowrap rounded-lg bg-dark px-3 py-1.5 text-xs font-medium text-white opacity-0 shadow-md transition-opacity duration-200 group-hover:opacity-100 md:block">
           WhatsApp
         </span>
       </a>
