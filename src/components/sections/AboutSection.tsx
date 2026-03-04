@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
+import ourStoryImg from "@/assets/our_story.png";
 import { StatsCounter } from "./StatsCounter";
 
 export function AboutSection() {
@@ -72,10 +73,8 @@ export function AboutSection() {
 
               <div className="relative overflow-hidden rounded-3xl shadow-xl">
                 <Image
-                  src="https://images.unsplash.com/photo-1588943211346-0908a1fb0b01?w=700&q=80"
-                  alt="Happy dog and cat together"
-                  width={700}
-                  height={470}
+                  src={ourStoryImg}
+                  alt="Fluff N' Woof - Our Story"
                   className="h-[350px] w-full object-cover md:h-[420px]"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-dark/20 to-transparent" />
