@@ -168,6 +168,10 @@
       }
     }
   },
+  "popup": {
+    "close": "Close",
+    "dontShowAgain": "Don't show this again"
+  },
   "footer": {
     "copyright": "© 2026 Fluff N' Woof. All rights reserved.",
     "slogan": "Your Pet, Our Care"
