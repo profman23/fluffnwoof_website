@@ -105,6 +105,11 @@
     "storyExtended": "This inspired him to open a veterinary hospital that rises to the quality standards of human hospitals, offering the latest and most advanced treatment methods that science has achieved. Our motto is \"Your Pet, Our Care\".",
     "topClinic": "We are proud to be among the top",
     "topClinicHighlight": "3 clinics in the Kingdom!",
+    "highlights": {
+      "specialized": "Specialized Veterinary Hospital",
+      "equipment": "Advanced German Equipment",
+      "reviews": "600+ Five-Star Reviews"
+    },
     "stats": {
       "years": { "value": "15", "suffix": "+", "label": "Years of Experience" },
       "reviews": { "value": "600", "suffix": "+", "label": "5-Star Reviews" },
@@ -119,25 +124,25 @@
         "text": "They are great with humans and pets! Both my dogs were neutered here and they had a very healthy and fast recovery. When my cat got sick I also got him here and he was very well taken care of.",
         "name": "Hend Saleh",
         "rating": 5,
-        "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face"
+        "image": "https://images.unsplash.com/photo-1615497001839-b0a0eac3274c?w=100&h=100&fit=crop&crop=face"
       },
       {
         "text": "I had my cat checked for his leg, and the vet was really nice and easy to talk to, For the grooming services, it was awesome as well! The place was also very neat, and smelled really nice. I definitely recommend this place.",
         "name": "Chantelle Reyes",
         "rating": 5,
-        "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face"
+        "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop&crop=face"
       },
       {
         "text": "The best clinic with excellent care. Dr Momen is a very professional & honest doctor. Mocha our dog is his patient from long time. He did a deep teeth cleaning for Mocha, now she has the Hollywood Smile!",
         "name": "Alia Al Monla",
         "rating": 5,
-        "image": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100&h=100&fit=crop&crop=face"
+        "image": "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=100&h=100&fit=crop&crop=face"
       },
       {
         "text": "Always will be my 1st vet, professional staff and great customer experience. They are not looking out for your money more than taking care of your pet. My 1st choice all the time!",
         "name": "Riyadh Almazyad",
         "rating": 5,
-        "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face"
+        "image": "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=100&h=100&fit=crop&crop=face"
       }
     ]
   },

@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { StatsCounter } from "./StatsCounter";
 
@@ -62,30 +63,22 @@ export function AboutSection() {
             </div>
           </ScrollReveal>
 
-          {/* Decorative pattern area */}
+          {/* About Image */}
           <ScrollReveal direction="left">
             <div className="relative flex items-center justify-center">
-              <div className="relative h-80 w-80 overflow-hidden md:h-96 md:w-96">
-                {/* Pattern circle */}
-                <div
-                  className="absolute inset-0 rounded-full opacity-10"
-                  style={{
-                    backgroundImage: "url('/images/pattern.svg')",
-                    backgroundRepeat: "repeat",
-                    backgroundSize: "150px",
-                  }}
+              {/* Animated background blobs */}
+              <div className="absolute h-72 w-72 animate-pulse rounded-full bg-primary/20 blur-3xl" />
+              <div className="absolute -end-8 top-8 h-48 w-48 animate-pulse rounded-full bg-accent/20 blur-2xl [animation-delay:1s]" />
+
+              <div className="relative overflow-hidden rounded-3xl shadow-xl">
+                <Image
+                  src="https://images.unsplash.com/photo-1588943211346-0908a1fb0b01?w=700&q=80"
+                  alt="Happy dog and cat together"
+                  width={700}
+                  height={470}
+                  className="h-[350px] w-full object-cover md:h-[420px]"
                 />
-                {/* Color circles */}
-                <div className="absolute -start-4 top-8 h-24 w-24 rounded-full bg-primary/30" />
-                <div className="absolute -end-4 bottom-8 h-20 w-20 rounded-full bg-accent/30" />
-                <div className="absolute bottom-16 start-12 h-16 w-16 rounded-full bg-secondary/50" />
-                {/* Center number */}
-                <div className="absolute inset-0 flex flex-col items-center justify-center">
-                  <span className="text-7xl font-bold text-primary md:text-8xl">3</span>
-                  <span className="mt-1 text-lg font-medium text-dark-light">
-                    {t("topClinicHighlight")}
-                  </span>
-                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-dark/20 to-transparent" />
               </div>
             </div>
           </ScrollReveal>

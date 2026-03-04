@@ -1,10 +1,17 @@
 "use client";
 
 import { useTranslations, useLocale } from "next-intl";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { cn } from "@/lib/utils";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { Button } from "@/components/ui/Button";
+import clinicsImg from "@/assets/Clinics.png";
+import groomingImg from "@/assets/Groomin.png";
+import petHotelImg from "@/assets/Pet Hotel.png";
+import vaccinationImg from "@/assets/Vaccination.png";
+import labRadiologyImg from "@/assets/Lab & Radiology.png";
+import surgeryImg from "@/assets/Surgeries.png";
+import fluffyWheelsImg from "@/assets/Fluffy Wheels.png";
 
 const SERVICE_KEYS = [
   "surgery",
@@ -16,31 +23,24 @@ const SERVICE_KEYS = [
   "fluffyWheels",
 ] as const;
 
-const SERVICE_IMAGES: Record<string, string> = {
-  surgery:
-    "https://images.unsplash.com/photo-1628009368231-7bb7cfcb0def?w=700&q=80",
-  clinics:
-    "https://images.unsplash.com/photo-1629740067905-bd3f515aa739?w=700&q=80",
-  vaccinations:
-    "https://images.unsplash.com/photo-1548767797-d8c844163c4c?w=700&q=80",
-  grooming:
-    "https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?w=700&q=80",
-  petHotel:
-    "https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=700&q=80",
-  labRadiology:
-    "https://images.unsplash.com/photo-1579165466741-7f35e4755660?w=700&q=80",
-  fluffyWheels:
-    "https://images.unsplash.com/photo-1581888227599-779811939961?w=700&q=80",
+const SERVICE_IMAGES: Record<string, string | StaticImageData> = {
+  surgery: surgeryImg,
+  clinics: clinicsImg,
+  vaccinations: vaccinationImg,
+  grooming: groomingImg,
+  petHotel: petHotelImg,
+  labRadiology: labRadiologyImg,
+  fluffyWheels: fluffyWheelsImg,
 };
 
 const SERVICE_IMAGE_ALT: Record<string, string> = {
-  surgery: "Veterinary surgery procedure",
-  clinics: "Pet medical examination",
-  vaccinations: "Pet vaccination",
-  grooming: "Dog grooming session",
-  petHotel: "Comfortable pet boarding",
-  labRadiology: "Veterinary lab equipment",
-  fluffyWheels: "Pet transportation service",
+  surgery: "Cute cat being examined by a caring veterinarian",
+  clinics: "Happy dog at the veterinary clinic",
+  vaccinations: "Adorable smiling puppy",
+  grooming: "Fluffy white Pomeranian looking fabulous",
+  petHotel: "Cozy cat sleeping peacefully",
+  labRadiology: "Curious cute orange tabby cat",
+  fluffyWheels: "Happy golden retriever enjoying a car ride",
 };
 
 const SERVICE_COLORS = [
