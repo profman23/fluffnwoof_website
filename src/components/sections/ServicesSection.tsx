@@ -5,13 +5,13 @@ import Image, { StaticImageData } from "next/image";
 import { cn } from "@/lib/utils";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { Button } from "@/components/ui/Button";
-import clinicsImg from "@/assets/Clinics.png";
-import groomingImg from "@/assets/Groomin.png";
-import petHotelImg from "@/assets/Pet Hotel.png";
-import vaccinationImg from "@/assets/Vaccination.png";
-import labRadiologyImg from "@/assets/Lab & Radiology.png";
-import surgeryImg from "@/assets/Surgeries.png";
-import fluffyWheelsImg from "@/assets/Fluffy Wheels.png";
+import clinicsImg from "@/assets/clinics.png";
+import groomingImg from "@/assets/grooming.png";
+import petHotelImg from "@/assets/pet-hotel.png";
+import vaccinationImg from "@/assets/vaccination.png";
+import labRadiologyImg from "@/assets/lab-radiology.png";
+import surgeryImg from "@/assets/surgeries.png";
+import fluffyWheelsImg from "@/assets/fluffy-wheels.png";
 
 const SERVICE_KEYS = [
   "surgery",
