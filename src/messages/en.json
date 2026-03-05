@@ -170,7 +170,23 @@
   },
   "popup": {
     "close": "Close",
-    "dontShowAgain": "Don't show this again"
+    "dontShowAgain": "Don't show this again",
+    "back": "Back",
+    "tapToLearnMore": "Tap to learn more",
+    "doctors": {
+      "ahmed-mandour": {
+        "name": "Prof. Ahmed Mandour, PhD",
+        "title": "Veterinary Cardiology & Internal Medicine Specialist",
+        "bio_1": "PhD in Veterinary Cardiology and Visiting Professor at Tokyo University of Agriculture and Technology (TUAT), Japan. Fellow of TUAT and Member of the Cardiac Imaging Research Development team.",
+        "bio_2": "Member of the Japanese Society of Veterinary Cardiology (JSVC) and Advanced Veterinary Imaging Program, TUAT.",
+        "bio_3": "Assistant Professor of Veterinary Internal Medicine, Suez Canal University (SCU), Egypt.",
+        "bio_4": "Veterinary Cardiology Specialist and Lecturer in Egypt and Saudi Arabia. Scientific Editor and Reviewer for International Journals in Veterinary Cardiology.",
+        "spec_1": "Echocardiography & ECG",
+        "spec_2": "Cardiothoracic Diseases",
+        "spec_3": "Advanced Cardiac Imaging",
+        "spec_4": "Internal Medicine Consultant"
+      }
+    }
   },
   "footer": {
     "copyright": "© 2026 Fluff N' Woof. All rights reserved.",
