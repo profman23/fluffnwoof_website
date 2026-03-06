@@ -173,6 +173,7 @@
     "dontShowAgain": "Don't show this again",
     "back": "Back",
     "tapToLearnMore": "Tap on any doctor to learn more",
+    "tapHint": "Tap",
     "comingSoon": "Coming Soon",
     "comingSoonDesc": "Doctor profile details will be available soon",
     "bookWithDoctor": "Book with {name}",

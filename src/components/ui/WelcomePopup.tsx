@@ -155,29 +155,49 @@ export function WelcomePopup() {
                             : t(`doctors.${hotspot.id}.name`)
                         }
                       >
-                        {/* Pulse hint on all doctors */}
+                        {/* Tap badge below + pulse glow - synced loop */}
                         {showHint && (
-                          <motion.div
-                            className="absolute inset-0 rounded-xl"
-                            initial={{ opacity: 0 }}
-                            animate={{
-                              opacity: [0, 0.6, 0, 0.6, 0],
-                              boxShadow: [
-                                "inset 0 0 0 0 rgba(245,223,89,0)",
-                                "inset 0 0 24px 4px rgba(245,223,89,0.35)",
-                                "inset 0 0 0 0 rgba(245,223,89,0)",
-                                "inset 0 0 24px 4px rgba(245,223,89,0.35)",
-                                "inset 0 0 0 0 rgba(245,223,89,0)",
-                              ],
-                            }}
-                            transition={{
-                              duration: 3,
-                              delay: index * 0.3,
-                              ease: "easeInOut",
-                              repeat: Infinity,
-                              repeatDelay: 1,
-                            }}
-                          />
+                          <>
+                            <motion.div
+                              className="absolute -bottom-1 left-1/2 z-10 flex -translate-x-1/2 items-center gap-1 rounded-full bg-white/95 px-2 py-1 shadow-lg"
+                              animate={{
+                                opacity: [0, 1, 1, 1, 0],
+                                y: [0, -4, -8, -4, 0],
+                              }}
+                              transition={{
+                                duration: 3,
+                                delay: index * 0.3,
+                                ease: "easeInOut",
+                                repeat: Infinity,
+                                repeatDelay: 1,
+                              }}
+                            >
+                              <span className="text-sm leading-none">👆</span>
+                              <span className="whitespace-nowrap text-[9px] font-semibold text-gray-600">
+                                {t("tapHint")}
+                              </span>
+                            </motion.div>
+                            <motion.div
+                              className="absolute inset-0 rounded-xl"
+                              animate={{
+                                opacity: [0, 0.6, 0, 0.6, 0],
+                                boxShadow: [
+                                  "inset 0 0 0 0 rgba(245,223,89,0)",
+                                  "inset 0 0 24px 4px rgba(245,223,89,0.35)",
+                                  "inset 0 0 0 0 rgba(245,223,89,0)",
+                                  "inset 0 0 24px 4px rgba(245,223,89,0.35)",
+                                  "inset 0 0 0 0 rgba(245,223,89,0)",
+                                ],
+                              }}
+                              transition={{
+                                duration: 3,
+                                delay: index * 0.3,
+                                ease: "easeInOut",
+                                repeat: Infinity,
+                                repeatDelay: 1,
+                              }}
+                            />
+                          </>
                         )}
 
                       </button>
