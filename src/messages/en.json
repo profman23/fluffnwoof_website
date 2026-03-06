@@ -178,6 +178,26 @@
     "bookWithDoctor": "Book with {name}",
     "whatsappDoctorMessage": "Hello, I would like to book an appointment with {name}",
     "doctors": {
+      "mahmoud-mossad": {
+        "name": "Dr. Mahmoud Mossad",
+        "title": "Veterinary Surgeon & Internal Medicine Specialist",
+        "bio_1": "Bachelor of Veterinary Medical Sciences (2014). Diploma in Therapeutic Nutrition. Diploma in Biochemistry and Laboratory Diagnostics.",
+        "bio_2": "Specializing in Internal Medicine for Companion Animals, General Surgery, and Advanced Microsurgery for Companion Animals.",
+        "bio_3": "Registered with IVPS (International Veterinary Professional Society).",
+        "bio_4": "Improve Veterinary Education (England) — General Practitioner in Animal Surgery.",
+        "spec_1": "Internal Medicine",
+        "spec_2": "General & Microsurgery",
+        "spec_3": "Therapeutic Nutrition"
+      },
+      "wasfy-nasseh": {
+        "name": "Dr. Wasfy Nasseh, DVM",
+        "title": "Veterinary Surgeon & Exotic Animal Medicine Specialist",
+        "bio_1": "Doctor of Veterinary Medicine (DVM) specializing in small animal medicine.",
+        "bio_2": "Postgraduate Diploma in Wild Animals & Exotic Medicine.",
+        "spec_1": "Small Animal Medicine",
+        "spec_2": "Wild & Exotic Animals",
+        "spec_3": "Veterinary Surgery"
+      },
       "ahmed-mandour": {
         "name": "Prof. Ahmed Mandour, PhD",
         "title": "Veterinary Cardiology & Internal Medicine Specialist",

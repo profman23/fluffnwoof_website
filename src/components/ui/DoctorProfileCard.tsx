@@ -11,8 +11,23 @@ interface DoctorProfileCardProps {
   onBack: () => void;
 }
 
-const BIO_KEYS = ["bio_1", "bio_2", "bio_3", "bio_4"] as const;
-const SPEC_KEYS = ["spec_1", "spec_2", "spec_3", "spec_4"] as const;
+const DOCTOR_CONFIG: Record<string, { bioKeys: string[]; specKeys: string[]; photoPosition: string }> = {
+  "ahmed-mandour": {
+    bioKeys: ["bio_1", "bio_2", "bio_3", "bio_4"],
+    specKeys: ["spec_1", "spec_2", "spec_3", "spec_4"],
+    photoPosition: "50% 12%",
+  },
+  "wasfy-nasseh": {
+    bioKeys: ["bio_1", "bio_2"],
+    specKeys: ["spec_1", "spec_2", "spec_3"],
+    photoPosition: "15% 12%",
+  },
+  "mahmoud-mossad": {
+    bioKeys: ["bio_1", "bio_2", "bio_3", "bio_4"],
+    specKeys: ["spec_1", "spec_2", "spec_3"],
+    photoPosition: "85% 12%",
+  },
+};
 
 export function DoctorProfileCard({ doctorId, onBack }: DoctorProfileCardProps) {
   const t = useTranslations("popup");
@@ -20,6 +35,7 @@ export function DoctorProfileCard({ doctorId, onBack }: DoctorProfileCardProps) 
   const isRTL = locale === "ar";
 
   const isComingSoon = doctorId === "coming-soon";
+  const config = DOCTOR_CONFIG[doctorId];
 
   return (
     <div className="flex max-h-[80vh] flex-col">
@@ -122,7 +138,7 @@ export function DoctorProfileCard({ doctorId, onBack }: DoctorProfileCardProps) 
                 alt={t(`doctors.${doctorId}.name`)}
                 fill
                 className="object-cover"
-                style={{ objectPosition: "50% 12%" }}
+                style={{ objectPosition: config?.photoPosition ?? "50% 12%" }}
               />
             </div>
           </motion.div>
@@ -157,7 +173,7 @@ export function DoctorProfileCard({ doctorId, onBack }: DoctorProfileCardProps) 
 
           {/* Bio paragraphs */}
           <div className="mb-5 space-y-3">
-            {BIO_KEYS.map((key, i) => (
+            {(config?.bioKeys ?? ["bio_1", "bio_2", "bio_3", "bio_4"]).map((key, i) => (
               <motion.p
                 key={key}
                 className="text-sm leading-relaxed text-gray-600"
@@ -172,7 +188,7 @@ export function DoctorProfileCard({ doctorId, onBack }: DoctorProfileCardProps) 
 
           {/* Specializations */}
           <div className="flex flex-wrap justify-center gap-2">
-            {SPEC_KEYS.map((key, i) => (
+            {(config?.specKeys ?? ["spec_1", "spec_2", "spec_3", "spec_4"]).map((key, i) => (
               <motion.span
                 key={key}
                 className="rounded-full bg-secondary px-3 py-1.5 text-xs font-medium text-dark"

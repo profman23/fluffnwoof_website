@@ -12,9 +12,9 @@ import { LanguageSwitcher } from "./LanguageSwitcher";
 const STORAGE_KEY = "fluffnwoof_popup_dismissed";
 
 const DOCTOR_HOTSPOTS = [
-  { id: "coming-soon", top: "5%", left: "2%", width: "28%", height: "65%" },
+  { id: "wasfy-nasseh", top: "5%", left: "2%", width: "28%", height: "65%" },
   { id: "ahmed-mandour", top: "5%", left: "30%", width: "40%", height: "65%" },
-  { id: "coming-soon", top: "5%", left: "70%", width: "28%", height: "65%" },
+  { id: "mahmoud-mossad", top: "5%", left: "70%", width: "28%", height: "65%" },
 ];
 
 export function WelcomePopup() {
