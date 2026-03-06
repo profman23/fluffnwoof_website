@@ -172,7 +172,11 @@
     "close": "Close",
     "dontShowAgain": "Don't show this again",
     "back": "Back",
-    "tapToLearnMore": "Tap to learn more",
+    "tapToLearnMore": "Tap on any doctor to learn more",
+    "comingSoon": "Coming Soon",
+    "comingSoonDesc": "Doctor profile details will be available soon",
+    "bookWithDoctor": "Book with {name}",
+    "whatsappDoctorMessage": "Hello, I would like to book an appointment with {name}",
     "doctors": {
       "ahmed-mandour": {
         "name": "Prof. Ahmed Mandour, PhD",

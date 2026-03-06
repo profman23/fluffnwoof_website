@@ -172,7 +172,11 @@
     "close": "إغلاق",
     "dontShowAgain": "عدم المشاهدة مرة أخرى",
     "back": "رجوع",
-    "tapToLearnMore": "اضغط لمعرفة المزيد",
+    "tapToLearnMore": "اضغط على أي دكتور للتعرف عليه",
+    "comingSoon": "قريباً",
+    "comingSoonDesc": "تفاصيل الدكتور ستكون متاحة قريباً",
+    "bookWithDoctor": "احجز موعد مع {name}",
+    "whatsappDoctorMessage": "مرحباً، أود حجز موعد مع {name}",
     "doctors": {
       "ahmed-mandour": {
         "name": "أ.د. أحمد مندور",

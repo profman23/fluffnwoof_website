@@ -7,8 +7,15 @@ import { useTranslations, useLocale } from "next-intl";
 import Image from "next/image";
 import popupImg from "@/assets/popup.png";
 import { DoctorProfileCard } from "./DoctorProfileCard";
+import { LanguageSwitcher } from "./LanguageSwitcher";
 
 const STORAGE_KEY = "fluffnwoof_popup_dismissed";
+
+const DOCTOR_HOTSPOTS = [
+  { id: "coming-soon", top: "5%", left: "2%", width: "28%", height: "65%" },
+  { id: "ahmed-mandour", top: "5%", left: "30%", width: "40%", height: "65%" },
+  { id: "coming-soon", top: "5%", left: "70%", width: "28%", height: "65%" },
+];
 
 export function WelcomePopup() {
   const t = useTranslations("popup");
@@ -30,10 +37,10 @@ export function WelcomePopup() {
     }
   }, []);
 
-  // Show hint pulse after popup opens
+  // Show hint after popup opens
   useEffect(() => {
     if (isOpen && !activeDoctor) {
-      const hintTimer = setTimeout(() => setShowHint(true), 2000);
+      const hintTimer = setTimeout(() => setShowHint(true), 1500);
       return () => clearTimeout(hintTimer);
     }
   }, [isOpen, activeDoctor]);
@@ -79,33 +86,49 @@ export function WelcomePopup() {
               {activeDoctor === null ? (
                 <motion.div
                   key="main-view"
+                  className="max-h-[90vh] overflow-y-auto"
                   initial={{ opacity: 0, x: -20 * slideDir }}
                   animate={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, x: -20 * slideDir }}
                   transition={{ duration: 0.25 }}
                 >
-                  {/* Close button */}
-                  <button
-                    onClick={handleClose}
-                    className="absolute end-3 top-3 z-10 flex h-8 w-8 items-center justify-center rounded-full bg-white/80 text-dark shadow-md backdrop-blur-sm transition-colors hover:bg-white"
-                    aria-label={t("close")}
-                  >
-                    <svg
-                      className="h-4 w-4"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth={2.5}
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M6 18L18 6M6 6l12 12"
-                      />
-                    </svg>
-                  </button>
+                  {/* Header: Language switcher + hint + close */}
+                  <div className="flex items-center justify-between px-3 py-2">
+                    <LanguageSwitcher className="border-0 bg-gray-100 text-xs" />
 
-                  {/* Image with doctor hotspot */}
+                    {showHint && (
+                      <motion.p
+                        className="text-center text-xs font-medium text-gray-500"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ delay: 0.5, duration: 0.4 }}
+                      >
+                        {t("tapToLearnMore")}
+                      </motion.p>
+                    )}
+
+                    <button
+                      onClick={handleClose}
+                      className="flex h-8 w-8 items-center justify-center rounded-full bg-gray-100 text-dark transition-colors hover:bg-gray-200"
+                      aria-label={t("close")}
+                    >
+                      <svg
+                        className="h-4 w-4"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth={2.5}
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M6 18L18 6M6 6l12 12"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+
+                  {/* Image with doctor hotspots */}
                   <div className="relative">
                     <Image
                       src={popupImg}
@@ -114,53 +137,51 @@ export function WelcomePopup() {
                       priority
                     />
 
-                    {/* Middle doctor hotspot */}
-                    <button
-                      onClick={() => setActiveDoctor("ahmed-mandour")}
-                      className="absolute cursor-pointer rounded-xl transition-all duration-300 hover:bg-primary/10"
-                      style={{
-                        top: "5%",
-                        left: "30%",
-                        width: "40%",
-                        height: "65%",
-                      }}
-                      aria-label={t("doctors.ahmed-mandour.name")}
-                    >
-                      {/* Hint pulse animation */}
-                      {showHint && (
-                        <motion.div
-                          className="absolute inset-0 rounded-xl"
-                          initial={{ opacity: 0 }}
-                          animate={{
-                            opacity: [0, 0.6, 0, 0.6, 0],
-                            boxShadow: [
-                              "inset 0 0 0 0 rgba(245,223,89,0)",
-                              "inset 0 0 24px 4px rgba(245,223,89,0.35)",
-                              "inset 0 0 0 0 rgba(245,223,89,0)",
-                              "inset 0 0 24px 4px rgba(245,223,89,0.35)",
-                              "inset 0 0 0 0 rgba(245,223,89,0)",
-                            ],
-                          }}
-                          transition={{
-                            duration: 3,
-                            ease: "easeInOut",
-                          }}
-                        />
-                      )}
-                    </button>
-
-                    {/* "Tap to learn more" tooltip */}
-                    {showHint && (
-                      <motion.div
-                        className="absolute start-1/2 -translate-x-1/2 rounded-full bg-dark/80 px-3 py-1.5 text-xs font-medium text-white backdrop-blur-sm"
-                        style={{ bottom: "28%" }}
-                        initial={{ opacity: 0, y: 8 }}
-                        animate={{ opacity: [0, 1, 1, 0], y: [8, 0, 0, -4] }}
-                        transition={{ duration: 3, times: [0, 0.15, 0.8, 1] }}
+                    {/* Doctor hotspots */}
+                    {DOCTOR_HOTSPOTS.map((hotspot, index) => (
+                      <button
+                        key={index}
+                        onClick={() => setActiveDoctor(hotspot.id)}
+                        className="absolute cursor-pointer rounded-xl transition-all duration-300 hover:bg-primary/10 active:bg-primary/15"
+                        style={{
+                          top: hotspot.top,
+                          left: hotspot.left,
+                          width: hotspot.width,
+                          height: hotspot.height,
+                        }}
+                        aria-label={
+                          hotspot.id === "coming-soon"
+                            ? t("comingSoon")
+                            : t(`doctors.${hotspot.id}.name`)
+                        }
                       >
-                        {t("tapToLearnMore")}
-                      </motion.div>
-                    )}
+                        {/* Pulse hint on all doctors */}
+                        {showHint && (
+                          <motion.div
+                            className="absolute inset-0 rounded-xl"
+                            initial={{ opacity: 0 }}
+                            animate={{
+                              opacity: [0, 0.6, 0, 0.6, 0],
+                              boxShadow: [
+                                "inset 0 0 0 0 rgba(245,223,89,0)",
+                                "inset 0 0 24px 4px rgba(245,223,89,0.35)",
+                                "inset 0 0 0 0 rgba(245,223,89,0)",
+                                "inset 0 0 24px 4px rgba(245,223,89,0.35)",
+                                "inset 0 0 0 0 rgba(245,223,89,0)",
+                              ],
+                            }}
+                            transition={{
+                              duration: 3,
+                              delay: index * 0.3,
+                              ease: "easeInOut",
+                              repeat: Infinity,
+                              repeatDelay: 1,
+                            }}
+                          />
+                        )}
+
+                      </button>
+                    ))}
                   </div>
 
                   {/* Don't show again */}
@@ -189,7 +210,6 @@ export function WelcomePopup() {
                   <DoctorProfileCard
                     doctorId={activeDoctor}
                     onBack={() => setActiveDoctor(null)}
-                    onClose={handleClose}
                   />
                 </motion.div>
               )}
