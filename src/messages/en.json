@@ -17,11 +17,25 @@
     "titleHighlight": "In Trusted Hands",
     "slogan": "Your Pet, Our Care",
     "cta": "Book Your Appointment Now",
-    "whatsappMessage": "Hello, I would like to book an appointment at Fluff N' Woof"
+    "whatsappMessage": "Hello, I would like to book an appointment at Fluff N' Woof",
+    "callTooltip": "Call Us"
   },
   "services": {
     "sectionTitle": "Our Services",
     "sectionSubtitle": "We offer a comprehensive range of specialized veterinary services",
+    "cardiology": {
+      "title": "Cardiology Department",
+      "description": "We are the only veterinary facility in the Middle East with a fully integrated cardiology department, equipped with advanced cardiac diagnostic and treatment devices.",
+      "bullets": [
+        "Echocardiography (heart ultrasound)",
+        "Electrocardiography (ECG)",
+        "Advanced cardiac imaging",
+        "Comprehensive heart disease diagnosis and treatment",
+        "Cardiothoracic disease management",
+        "Ongoing cardiac monitoring and follow-up care"
+      ],
+      "cta": "Book a Cardiology Consultation"
+    },
     "surgery": {
       "title": "Surgeries",
       "description": "Our skilled surgeons perform a wide range of procedures with high precision using advanced facilities imported from Germany",
@@ -143,6 +157,24 @@
         "name": "Riyadh Almazyad",
         "rating": 5,
         "image": "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=100&h=100&fit=crop&crop=face"
+      },
+      {
+        "text": "I found an injured stray cat on the street and rushed to the clinic since it was the nearest one. They told me that since it's a rescue, they offer a 10% discount on all services as their way of supporting rescuers. I really appreciate their initiative!",
+        "name": "Animal Rescuer",
+        "rating": 5,
+        "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face"
+      },
+      {
+        "text": "I brought Leo in yesterday because he had a skin allergy and we didn't know the cause. Dr. Mahmoud examined him, explained everything in detail and clearly, and gave me treatments. Alhamdulillah he improved and now I always come here.",
+        "name": "Leo's Owner",
+        "rating": 5,
+        "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face"
+      },
+      {
+        "text": "Clean clinic and very cooperative doctors!",
+        "name": "Happy Client",
+        "rating": 5,
+        "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=face"
       }
     ]
   },
@@ -151,20 +183,22 @@
     "addressLabel": "Address",
     "address": "Riyadh, Al Qayrawan, Prince Abdullah bin Saud Street",
     "phoneLabel": "Phone",
-    "phone": "0534429329",
+    "phone": "0554145481",
     "hoursLabel": "Working Hours",
     "hours": {
-      "weekdays": {
-        "days": "Sat - Sun - Mon - Wed - Thu",
-        "time": "9:00 AM to 12:00 AM"
+      "ramadanTitle": "Ramadan Hours",
+      "ramadan_morning": {
+        "days": "Daily",
+        "time": "11:00 AM – 5:00 PM"
       },
-      "tuesday": {
-        "days": "Tuesday",
-        "time": "12:00 PM to 12:00 AM"
+      "ramadan_evening": {
+        "days": "Daily",
+        "time": "8:30 PM – 2:30 AM"
       },
-      "friday": {
-        "days": "Friday",
-        "time": "4:00 PM to 12:00 AM"
+      "afterRamadanTitle": "After Ramadan",
+      "afterRamadan": {
+        "days": "All week",
+        "time": "10:00 AM – 12:00 AM"
       }
     }
   },

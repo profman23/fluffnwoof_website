@@ -12,8 +12,10 @@ import vaccinationImg from "@/assets/vaccination.png";
 import labRadiologyImg from "@/assets/lab-radiology.png";
 import surgeryImg from "@/assets/surgeries.png";
 import fluffyWheelsImg from "@/assets/fluffy-wheels.png";
+import cardiologyImg from "@/assets/cardiology.png";
 
 const SERVICE_KEYS = [
+  "cardiology",
   "surgery",
   "clinics",
   "vaccinations",
@@ -24,6 +26,7 @@ const SERVICE_KEYS = [
 ] as const;
 
 const SERVICE_IMAGES: Record<string, string | StaticImageData> = {
+  cardiology: cardiologyImg,
   surgery: surgeryImg,
   clinics: clinicsImg,
   vaccinations: vaccinationImg,
@@ -34,6 +37,7 @@ const SERVICE_IMAGES: Record<string, string | StaticImageData> = {
 };
 
 const SERVICE_IMAGE_ALT: Record<string, string> = {
+  cardiology: "Veterinary cardiology department with advanced cardiac equipment",
   surgery: "Cute cat being examined by a caring veterinarian",
   clinics: "Happy dog at the veterinary clinic",
   vaccinations: "Adorable smiling puppy",
@@ -45,6 +49,7 @@ const SERVICE_IMAGE_ALT: Record<string, string> = {
 
 const SERVICE_COLORS = [
   "bg-accent-light",
+  "bg-accent-light",
   "bg-secondary-light",
   "bg-primary-light",
   "bg-accent-light",
@@ -54,7 +59,8 @@ const SERVICE_COLORS = [
 ];
 
 const SERVICE_BG: Record<string, string | null> = {
-  surgery: "bg-accent-light",
+  cardiology: "bg-accent-light",
+  surgery: null,
   clinics: null,
   vaccinations: "bg-primary-light",
   grooming: null,
@@ -65,6 +71,10 @@ const SERVICE_BG: Record<string, string | null> = {
 
 function ServiceIcon({ index }: { index: number }) {
   const icons = [
+    <svg key="cardiology" className="h-7 w-7 text-accent-dark" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+      <path strokeLinecap="round" strokeLinejoin="round" d="M7.5 11.25h3l1.5-3 2 6 1.5-3h2" />
+    </svg>,
     <svg key={0} className="h-7 w-7 text-accent-dark" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
       <path strokeLinecap="round" strokeLinejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085" />
     </svg>,
@@ -154,7 +164,12 @@ export function ServicesSection() {
                       alt={SERVICE_IMAGE_ALT[key]}
                       width={700}
                       height={470}
-                      className="h-[300px] w-full object-cover md:h-[350px]"
+                      className={cn(
+                        "w-full",
+                        key === "cardiology"
+                          ? "h-auto object-contain"
+                          : "h-[300px] object-cover md:h-[350px]"
+                      )}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-dark/10 to-transparent" />
                   </div>

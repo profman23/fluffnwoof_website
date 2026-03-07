@@ -40,7 +40,7 @@ export function WelcomePopup() {
   // Show hint after popup opens
   useEffect(() => {
     if (isOpen && !activeDoctor) {
-      const hintTimer = setTimeout(() => setShowHint(true), 1500);
+      const hintTimer = setTimeout(() => setShowHint(true), 500);
       return () => clearTimeout(hintTimer);
     }
   }, [isOpen, activeDoctor]);

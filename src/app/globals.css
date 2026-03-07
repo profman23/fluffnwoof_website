@@ -112,21 +112,29 @@ body::before {
 }
 
 /* ===== Marquee Animation ===== */
-@keyframes marquee {
+@keyframes marquee-scroll {
   0% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(calc(var(--marquee-width, 0px) * -1));
   }
 }
 
-.animate-marquee {
-  animation: marquee 30s linear infinite;
+.marquee-track {
+  width: max-content;
+  animation: marquee-scroll 45s linear infinite;
+  will-change: transform;
 }
 
-.animate-marquee:hover {
+.marquee-track:hover {
   animation-play-state: paused;
+}
+
+@media (max-width: 768px) {
+  .marquee-track {
+    animation-duration: 28s;
+  }
 }
 
 /* ===== WhatsApp Glow Animation ===== */
@@ -142,3 +150,4 @@ body::before {
 .whatsapp-float-btn {
   animation: whatsapp-glow 2s ease-in-out infinite;
 }
+

@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { useRef, useEffect, useState } from "react";
 import { TestimonialCard } from "./TestimonialCard";
 
 export function TestimonialsSection() {
@@ -12,8 +13,30 @@ export function TestimonialsSection() {
     image: string;
   }>;
 
-  // Double the items for seamless infinite loop
-  const duplicated = [...items, ...items];
+  const trackRef = useRef<HTMLDivElement>(null);
+  const [trackWidth, setTrackWidth] = useState(0);
+
+  useEffect(() => {
+    function measure() {
+      if (trackRef.current) {
+        // Measure the width of one set of cards (first half)
+        const children = trackRef.current.children;
+        let width = 0;
+        for (let i = 0; i < items.length; i++) {
+          const child = children[i] as HTMLElement;
+          if (child) {
+            width += child.offsetWidth;
+          }
+        }
+        // Add gaps: (items.length) gaps of 24px (gap-6)
+        width += items.length * 24;
+        setTrackWidth(width);
+      }
+    }
+    measure();
+    window.addEventListener("resize", measure);
+    return () => window.removeEventListener("resize", measure);
+  }, [items.length]);
 
   return (
     <section id="testimonials" className="py-20 md:py-28">
@@ -37,17 +60,38 @@ export function TestimonialsSection() {
         </div>
       </div>
 
-      {/* Marquee container */}
-      <div className="relative overflow-hidden">
+      {/* Marquee container - force LTR so animation works identically in both locales */}
+      <div dir="ltr" className="relative overflow-hidden">
         {/* Fade edges */}
-        <div className="pointer-events-none absolute inset-y-0 start-0 z-10 w-16 bg-gradient-to-r from-white to-transparent rtl:bg-gradient-to-l md:w-32" />
-        <div className="pointer-events-none absolute inset-y-0 end-0 z-10 w-16 bg-gradient-to-l from-white to-transparent rtl:bg-gradient-to-r md:w-32" />
+        <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-16 bg-gradient-to-r from-white to-transparent md:w-32" />
+        <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-16 bg-gradient-to-l from-white to-transparent md:w-32" />
 
         {/* Scrolling track */}
-        <div className="animate-marquee flex gap-6 py-4">
-          {duplicated.map((item, i) => (
+        <div
+          ref={trackRef}
+          className="marquee-track flex gap-6 py-4"
+          style={
+            trackWidth
+              ? ({
+                  "--marquee-width": `${trackWidth}px`,
+                } as React.CSSProperties)
+              : undefined
+          }
+        >
+          {/* First set - all 7 */}
+          {items.map((item, i) => (
             <TestimonialCard
-              key={i}
+              key={`a-${i}`}
+              text={item.text}
+              name={item.name}
+              rating={item.rating}
+              image={item.image}
+            />
+          ))}
+          {/* Second set - all 7 (duplicate for seamless loop) */}
+          {items.map((item, i) => (
+            <TestimonialCard
+              key={`b-${i}`}
               text={item.text}
               name={item.name}
               rating={item.rating}

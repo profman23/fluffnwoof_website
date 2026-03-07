@@ -7,7 +7,7 @@ export function JsonLd() {
     url: "https://fluffnwoof.sa",
     logo: "https://fluffnwoof.sa/images/logo.png",
     image: "https://fluffnwoof.sa/images/logo.png",
-    telephone: "+966534429329",
+    telephone: "+966554145481",
     address: {
       "@type": "PostalAddress",
       streetAddress: "Prince Abdullah bin Saud Street, Al Qayrawan",
@@ -18,20 +18,8 @@ export function JsonLd() {
     openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",
-        dayOfWeek: ["Saturday", "Sunday", "Monday", "Wednesday", "Thursday"],
-        opens: "09:00",
-        closes: "23:59",
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: "Tuesday",
-        opens: "12:00",
-        closes: "23:59",
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: "Friday",
-        opens: "16:00",
+        dayOfWeek: ["Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        opens: "10:00",
         closes: "23:59",
       },
     ],
@@ -51,6 +39,7 @@ export function JsonLd() {
       "@type": "OfferCatalog",
       name: "Veterinary Services",
       itemListElement: [
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Veterinary Cardiology" } },
         { "@type": "Offer", itemOffered: { "@type": "Service", name: "Veterinary Surgery" } },
         { "@type": "Offer", itemOffered: { "@type": "Service", name: "Veterinary Clinic" } },
         { "@type": "Offer", itemOffered: { "@type": "Service", name: "Pet Vaccination" } },
