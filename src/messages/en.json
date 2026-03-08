@@ -122,13 +122,13 @@
     "highlights": {
       "specialized": "Specialized Veterinary Hospital",
       "equipment": "Advanced German Equipment",
-      "reviews": "600+ Five-Star Reviews"
+      "reviews": "700+ Five-Star Reviews"
     },
     "stats": {
       "years": { "value": "15", "suffix": "+", "label": "Years of Experience" },
-      "reviews": { "value": "600", "suffix": "+", "label": "5-Star Reviews" },
-      "happyPets": { "value": "5500", "suffix": "+", "label": "Happy Pets" },
-      "surgeries": { "value": "1000", "suffix": "+", "label": "Successful Surgeries" }
+      "reviews": { "value": "700", "suffix": "+", "label": "5-Star Reviews" },
+      "happyPets": { "value": "10000", "suffix": "+", "label": "Happy Pets" },
+      "surgeries": { "value": "4500", "suffix": "+", "label": "Successful Surgeries" }
     }
   },
   "testimonials": {

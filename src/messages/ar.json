@@ -122,13 +122,13 @@
     "highlights": {
       "specialized": "مستشفى بيطري متخصص",
       "equipment": "أجهزة ألمانية متطورة",
-      "reviews": "+600 تقييم 5 نجوم"
+      "reviews": "+700 تقييم 5 نجوم"
     },
     "stats": {
       "years": { "value": "15", "suffix": "+", "label": "سنة خبرة" },
-      "reviews": { "value": "600", "suffix": "+", "label": "تقييم 5 نجوم" },
-      "happyPets": { "value": "5500", "suffix": "+", "label": "أليف سعيد" },
-      "surgeries": { "value": "1000", "suffix": "+", "label": "عملية ناجحة" }
+      "reviews": { "value": "700", "suffix": "+", "label": "تقييم 5 نجوم" },
+      "happyPets": { "value": "10000", "suffix": "+", "label": "أليف سعيد" },
+      "surgeries": { "value": "4500", "suffix": "+", "label": "عملية ناجحة" }
     }
   },
   "testimonials": {

@@ -127,10 +127,6 @@ body::before {
   will-change: transform;
 }
 
-.marquee-track:hover {
-  animation-play-state: paused;
-}
-
 @media (max-width: 768px) {
   .marquee-track {
     animation-duration: 28s;
@@ -149,5 +145,22 @@ body::before {
 
 .whatsapp-float-btn {
   animation: whatsapp-glow 2s ease-in-out infinite;
+}
+
+/* ===== Instagram Pulse Animation ===== */
+@keyframes ig-pulse {
+  0%, 70%, 100% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(1.15);
+  }
+  90% {
+    transform: scale(0.95);
+  }
+}
+
+.ig-nav-btn {
+  animation: ig-pulse 3s ease-in-out infinite;
 }
 

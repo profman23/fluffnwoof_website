@@ -32,7 +32,7 @@ export function JsonLd() {
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: "4.9",
-      reviewCount: "600",
+      reviewCount: "700",
       bestRating: "5",
     },
     hasOfferCatalog: {

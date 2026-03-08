@@ -69,7 +69,7 @@ export function TestimonialsSection() {
         {/* Scrolling track */}
         <div
           ref={trackRef}
-          className="marquee-track flex gap-6 py-4"
+          className="marquee-track pointer-events-none flex gap-6 py-4"
           style={
             trackWidth
               ? ({
