@@ -205,6 +205,23 @@ export function ServicesSection() {
                       </p>
                     )}
 
+                    {/* Doctor Info (Cardiology only) */}
+                    {key === "cardiology" && (
+                      <div className="mb-4 flex items-center gap-3 rounded-xl bg-primary-light/50 px-4 py-3">
+                        <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary text-lg">
+                          🩺
+                        </div>
+                        <div>
+                          <p className="text-sm font-bold text-dark md:text-base">
+                            {t("cardiology.doctorName")}
+                          </p>
+                          <p className="text-xs leading-snug text-gray-500 md:text-sm">
+                            {t("cardiology.doctorTitle")}
+                          </p>
+                        </div>
+                      </div>
+                    )}
+
                     {/* Bullets */}
                     {bullets.length > 0 && (
                       <ul className="mb-6 space-y-2 text-sm text-gray-600 md:text-base">

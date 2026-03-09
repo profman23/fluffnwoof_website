@@ -34,7 +34,9 @@
         "Cardiothoracic disease management",
         "Ongoing cardiac monitoring and follow-up care"
       ],
-      "cta": "Book a Cardiology Consultation"
+      "cta": "Book a Cardiology Consultation",
+      "doctorName": "Prof. Ahmed Mandour, PhD",
+      "doctorTitle": "PhD in Veterinary Cardiology and Visiting Professor at Tokyo University of Agriculture and Technology (TUAT), Japan"
     },
     "surgery": {
       "title": "Surgeries",
