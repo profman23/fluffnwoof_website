@@ -84,28 +84,24 @@ export function ContactSection() {
                   <p className="text-sm text-gray-500">{t("hoursLabel")}</p>
                 </div>
                 <div className="space-y-4 ps-10">
-                  {/* Ramadan Hours */}
+                  {/* Eid Hours */}
                   <div>
-                    <p className="mb-2 text-sm font-semibold text-accent-dark">🌙 {t("hours.ramadanTitle")}</p>
-                    {(["ramadan_morning", "ramadan_evening"] as const).map((period) => (
-                      <div key={period} className="mb-1">
-                        <p className="font-medium text-dark">
-                          {t(`hours.${period}.days`)}
-                        </p>
-                        <p className="text-sm text-dark-light">
-                          {t(`hours.${period}.time`)}
-                        </p>
-                      </div>
-                    ))}
-                  </div>
-                  {/* After Ramadan */}
-                  <div>
-                    <p className="mb-2 text-sm font-semibold text-secondary-dark">{t("hours.afterRamadanTitle")}</p>
+                    <p className="mb-2 text-sm font-semibold text-accent-dark">🎉 {t("hours.eidTitle")}</p>
                     <p className="font-medium text-dark">
-                      {t("hours.afterRamadan.days")}
+                      {t("hours.eid.days")}
                     </p>
                     <p className="text-sm text-dark-light">
-                      {t("hours.afterRamadan.time")}
+                      {t("hours.eid.time")}
+                    </p>
+                  </div>
+                  {/* After Eid */}
+                  <div>
+                    <p className="mb-2 text-sm font-semibold text-secondary-dark">{t("hours.afterEidTitle")}</p>
+                    <p className="font-medium text-dark">
+                      {t("hours.afterEid.days")}
+                    </p>
+                    <p className="text-sm text-dark-light">
+                      {t("hours.afterEid.time")}
                     </p>
                   </div>
                 </div>

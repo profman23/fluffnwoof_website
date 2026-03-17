@@ -188,17 +188,13 @@
     "phone": "0554145481",
     "hoursLabel": "Working Hours",
     "hours": {
-      "ramadanTitle": "Ramadan Hours",
-      "ramadan_morning": {
+      "eidTitle": "Eid Holiday Hours",
+      "eid": {
         "days": "Daily",
-        "time": "11:00 AM – 5:00 PM"
+        "time": "2:00 PM – 10:00 PM"
       },
-      "ramadan_evening": {
-        "days": "Daily",
-        "time": "8:30 PM – 2:30 AM"
-      },
-      "afterRamadanTitle": "After Ramadan",
-      "afterRamadan": {
+      "afterEidTitle": "After Eid",
+      "afterEid": {
         "days": "All week",
         "time": "10:00 AM – 12:00 AM"
       }
