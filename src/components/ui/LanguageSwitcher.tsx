@@ -1,24 +1,18 @@
 "use client";
 
 import { useLocale } from "next-intl";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "@/i18n/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 export function LanguageSwitcher({ className }: { className?: string }) {
   const locale = useLocale();
   const router = useRouter();
+  const pathname = usePathname();
 
-  const toggleLocale = async () => {
+  const toggleLocale = () => {
     const newLocale = locale === "ar" ? "en" : "ar";
-
-    await fetch("/api/set-locale", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ locale: newLocale }),
-    });
-
-    router.refresh();
+    router.replace(pathname, { locale: newLocale });
   };
 
   return (
