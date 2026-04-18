@@ -7,7 +7,7 @@ export function JsonLd() {
     url: "https://fluffnwoof.sa",
     logo: "https://fluffnwoof.sa/images/logo.png",
     image: "https://fluffnwoof.sa/images/logo.png",
-    telephone: "+966554145481",
+    telephone: "+966534429329",
     address: {
       "@type": "PostalAddress",
       streetAddress: "Prince Abdullah bin Saud Street, Al Qayrawan",
