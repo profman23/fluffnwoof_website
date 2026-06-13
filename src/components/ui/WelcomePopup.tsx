@@ -17,25 +17,40 @@ const DOCTOR_HOTSPOTS = [
   { id: "mahmoud-mossad", top: "5%", left: "70%", width: "28%", height: "65%" },
 ];
 
-export function WelcomePopup() {
+interface WelcomePopupProps {
+  /**
+   * When provided, the popup is controlled by the parent (open state driven
+   * externally). When omitted, the popup manages its own open timing and
+   * localStorage dismissal (standalone/backwards-compatible behavior).
+   */
+  open?: boolean;
+  onClose?: () => void;
+}
+
+export function WelcomePopup({ open, onClose }: WelcomePopupProps = {}) {
   const t = useTranslations("popup");
   const locale = useLocale();
   const isRTL = locale === "ar";
 
-  const [isOpen, setIsOpen] = useState(false);
+  const isControlled = open !== undefined;
+
+  const [internalOpen, setInternalOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
   const [dontShow, setDontShow] = useState(false);
   const [activeDoctor, setActiveDoctor] = useState<string | null>(null);
   const [showHint, setShowHint] = useState(false);
 
+  const isOpen = isControlled ? open : internalOpen;
+
   useEffect(() => {
     setMounted(true);
+    if (isControlled) return;
     const dismissed = localStorage.getItem(STORAGE_KEY);
     if (!dismissed) {
-      const timer = setTimeout(() => setIsOpen(true), 500);
+      const timer = setTimeout(() => setInternalOpen(true), 500);
       return () => clearTimeout(timer);
     }
-  }, []);
+  }, [isControlled]);
 
   // Show hint after popup opens
   useEffect(() => {
@@ -46,10 +61,14 @@ export function WelcomePopup() {
   }, [isOpen, activeDoctor]);
 
   const handleClose = () => {
-    setIsOpen(false);
     setActiveDoctor(null);
     if (dontShow) {
       localStorage.setItem(STORAGE_KEY, "true");
+    }
+    if (isControlled) {
+      onClose?.();
+    } else {
+      setInternalOpen(false);
     }
   };
 

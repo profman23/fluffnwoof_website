@@ -200,6 +200,12 @@
       }
     }
   },
+  "intro": {
+    "skip": "Skip",
+    "close": "Close",
+    "replayTooltip": "Watch the Arab News feature",
+    "arabNewsBadge": "As featured on Arab News"
+  },
   "popup": {
     "close": "Close",
     "dontShowAgain": "Don't show this again",

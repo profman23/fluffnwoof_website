@@ -7,7 +7,7 @@ import { ContactSection } from "@/components/sections/ContactSection";
 import { Footer } from "@/components/layout/Footer";
 import { FloatingWhatsApp } from "@/components/layout/FloatingWhatsApp";
 import { FloatingPhone } from "@/components/layout/FloatingPhone";
-import { WelcomePopup } from "@/components/ui/WelcomePopup";
+import { IntroExperience } from "@/components/ui/IntroExperience";
 
 export default function HomePage() {
   return (
@@ -23,7 +23,7 @@ export default function HomePage() {
       <Footer />
       <FloatingWhatsApp />
       <FloatingPhone />
-      <WelcomePopup />
+      <IntroExperience />
     </>
   );
 }

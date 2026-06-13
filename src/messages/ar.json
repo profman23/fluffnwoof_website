@@ -200,6 +200,12 @@
       }
     }
   },
+  "intro": {
+    "skip": "تخطّي",
+    "close": "إغلاق",
+    "replayTooltip": "شاهد فيديو Arab News",
+    "arabNewsBadge": "كما ظهرنا في Arab News"
+  },
   "popup": {
     "close": "إغلاق",
     "dontShowAgain": "عدم المشاهدة مرة أخرى",
