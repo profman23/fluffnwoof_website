@@ -81,16 +81,47 @@ export function IntroVideo({
     if (open) setVisible(true);
   }, [open]);
 
-  // Restart playback every time the overlay opens.
-  useEffect(() => {
-    if (open && videoRef.current) {
-      videoRef.current.currentTime = 0;
-      const playPromise = videoRef.current.play();
-      if (playPromise) playPromise.catch(() => {});
-    }
-  }, [open]);
-
   const isIntro = mode === "intro";
+
+  // Time the first frame stays frozen before playback begins, in ms.
+  const PLAYBACK_DELAY_MS = 1000;
+
+  const startPlayback = () => {
+    const video = videoRef.current;
+    if (!video) return;
+    const p = video.play();
+    if (p) p.catch(() => {});
+  };
+
+  // On open, show a frozen first frame, then start playing after a short pause.
+  // The replay mode (user-initiated) plays right away. We poll on a short timer
+  // so this still fires even though the <video> element mounts a tick later
+  // (it only renders once `visible && open` is true).
+  useEffect(() => {
+    if (!open) return;
+
+    const prepare = () => {
+      const video = videoRef.current;
+      if (!video) return false;
+      video.currentTime = 0;
+      video.pause();
+      return true;
+    };
+
+    // Retry preparing the first frame until the element is mounted.
+    let mountTimer: ReturnType<typeof setTimeout> | undefined;
+    if (!prepare()) {
+      mountTimer = setTimeout(prepare, 150);
+    }
+
+    const delay = isIntro ? PLAYBACK_DELAY_MS : 0;
+    const playTimer = setTimeout(startPlayback, delay);
+
+    return () => {
+      clearTimeout(playTimer);
+      if (mountTimer) clearTimeout(mountTimer);
+    };
+  }, [open, isIntro]);
 
   // Begin closing: compute the fresh exit transform, then hide (triggers exit).
   const handleClose = () => {
@@ -173,7 +204,6 @@ export function IntroVideo({
               src={VIDEO_SRC}
               className="block h-auto max-h-[72vh] w-auto max-w-[88vw] sm:max-w-sm"
               preload="auto"
-              autoPlay
               muted={isIntro}
               playsInline
               controls={!isIntro}
