@@ -124,13 +124,13 @@
     "highlights": {
       "specialized": "مستشفى بيطري متخصص",
       "equipment": "أجهزة ألمانية متطورة",
-      "reviews": "+700 تقييم 5 نجوم"
+      "reviews": "+800 تقييم 5 نجوم"
     },
     "stats": {
       "years": { "value": "15", "suffix": "+", "label": "سنة خبرة" },
-      "reviews": { "value": "700", "suffix": "+", "label": "تقييم 5 نجوم" },
-      "happyPets": { "value": "10000", "suffix": "+", "label": "أليف سعيد" },
-      "surgeries": { "value": "4500", "suffix": "+", "label": "عملية ناجحة" }
+      "reviews": { "value": "800", "suffix": "+", "label": "تقييم 5 نجوم" },
+      "happyPets": { "value": "20000", "suffix": "+", "label": "أليف سعيد" },
+      "surgeries": { "value": "6500", "suffix": "+", "label": "عملية ناجحة" }
     }
   },
   "testimonials": {
@@ -188,12 +188,7 @@
     "phone": "0554145481",
     "hoursLabel": "مواعيد الدوام",
     "hours": {
-      "eidTitle": "مواعيد العيد",
-      "eid": {
-        "days": "يومياً",
-        "time": "من 2 مساءً حتى 10 مساءً"
-      },
-      "afterEidTitle": "بعد العيد",
+      "afterEidTitle": "مواعيد العمل",
       "afterEid": {
         "days": "طوال أيام الأسبوع",
         "time": "من 10 صباحاً حتى 12 منتصف الليل"

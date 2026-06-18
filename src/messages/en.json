@@ -124,13 +124,13 @@
     "highlights": {
       "specialized": "Specialized Veterinary Hospital",
       "equipment": "Advanced German Equipment",
-      "reviews": "700+ Five-Star Reviews"
+      "reviews": "800+ Five-Star Reviews"
     },
     "stats": {
       "years": { "value": "15", "suffix": "+", "label": "Years of Experience" },
-      "reviews": { "value": "700", "suffix": "+", "label": "5-Star Reviews" },
-      "happyPets": { "value": "10000", "suffix": "+", "label": "Happy Pets" },
-      "surgeries": { "value": "4500", "suffix": "+", "label": "Successful Surgeries" }
+      "reviews": { "value": "800", "suffix": "+", "label": "5-Star Reviews" },
+      "happyPets": { "value": "20000", "suffix": "+", "label": "Happy Pets" },
+      "surgeries": { "value": "6500", "suffix": "+", "label": "Successful Surgeries" }
     }
   },
   "testimonials": {
@@ -188,12 +188,7 @@
     "phone": "0554145481",
     "hoursLabel": "Working Hours",
     "hours": {
-      "eidTitle": "Eid Holiday Hours",
-      "eid": {
-        "days": "Daily",
-        "time": "2:00 PM – 10:00 PM"
-      },
-      "afterEidTitle": "After Eid",
+      "afterEidTitle": "Working Hours",
       "afterEid": {
         "days": "All week",
         "time": "10:00 AM – 12:00 AM"

@@ -84,17 +84,7 @@ export function ContactSection() {
                   <p className="text-sm text-gray-500">{t("hoursLabel")}</p>
                 </div>
                 <div className="space-y-4 ps-10">
-                  {/* Eid Hours */}
-                  <div>
-                    <p className="mb-2 text-sm font-semibold text-accent-dark">🎉 {t("hours.eidTitle")}</p>
-                    <p className="font-medium text-dark">
-                      {t("hours.eid.days")}
-                    </p>
-                    <p className="text-sm text-dark-light">
-                      {t("hours.eid.time")}
-                    </p>
-                  </div>
-                  {/* After Eid */}
+                  {/* Working Hours */}
                   <div>
                     <p className="mb-2 text-sm font-semibold text-secondary-dark">{t("hours.afterEidTitle")}</p>
                     <p className="font-medium text-dark">
