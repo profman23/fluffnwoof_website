@@ -20,6 +20,11 @@
     "whatsappMessage": "مرحباً، أود حجز موعد في مستشفى فلف أن ووف",
     "callTooltip": "اتصل بنا"
   },
+  "doctorsSection": {
+    "sectionTitle": "أطباؤنا",
+    "cardTitle": "تعرّف على أطبائنا",
+    "cardCta": "اضغط لمعرفة المزيد"
+  },
   "services": {
     "sectionTitle": "خدماتنا",
     "sectionSubtitle": "نقدم مجموعة متكاملة من الخدمات البيطرية المتخصصة",

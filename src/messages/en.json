@@ -20,6 +20,11 @@
     "whatsappMessage": "Hello, I would like to book an appointment at Fluff N' Woof",
     "callTooltip": "Call Us"
   },
+  "doctorsSection": {
+    "sectionTitle": "Our Doctors",
+    "cardTitle": "Meet Our Doctors",
+    "cardCta": "Tap to learn more"
+  },
   "services": {
     "sectionTitle": "Our Services",
     "sectionSubtitle": "We offer a comprehensive range of specialized veterinary services",

@@ -25,9 +25,15 @@ interface WelcomePopupProps {
    */
   open?: boolean;
   onClose?: () => void;
+  /**
+   * Hide the "don't show this again" checkbox. Used when the popup is opened
+   * on demand from an in-page card (DoctorsSection) rather than auto-showing
+   * on load — the dismissal choice has no meaning in that context.
+   */
+  hideDismiss?: boolean;
 }
 
-export function WelcomePopup({ open, onClose }: WelcomePopupProps = {}) {
+export function WelcomePopup({ open, onClose, hideDismiss = false }: WelcomePopupProps = {}) {
   const t = useTranslations("popup");
   const locale = useLocale();
   const isRTL = locale === "ar";
@@ -224,19 +230,21 @@ export function WelcomePopup({ open, onClose }: WelcomePopupProps = {}) {
                   </div>
 
                   {/* Don't show again */}
-                  <div className="px-5 py-4">
-                    <label className="flex cursor-pointer items-center gap-3">
-                      <input
-                        type="checkbox"
-                        checked={dontShow}
-                        onChange={(e) => setDontShow(e.target.checked)}
-                        className="h-4 w-4 rounded border-gray-300 accent-primary"
-                      />
-                      <span className="text-sm text-gray-500">
-                        {t("dontShowAgain")}
-                      </span>
-                    </label>
-                  </div>
+                  {!hideDismiss && (
+                    <div className="px-5 py-4">
+                      <label className="flex cursor-pointer items-center gap-3">
+                        <input
+                          type="checkbox"
+                          checked={dontShow}
+                          onChange={(e) => setDontShow(e.target.checked)}
+                          className="h-4 w-4 rounded border-gray-300 accent-primary"
+                        />
+                        <span className="text-sm text-gray-500">
+                          {t("dontShowAgain")}
+                        </span>
+                      </label>
+                    </div>
+                  )}
                 </motion.div>
               ) : (
                 <motion.div
