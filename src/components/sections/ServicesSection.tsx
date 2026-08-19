@@ -11,7 +11,7 @@ import petHotelImg from "@/assets/pet-hotel.png";
 import vaccinationImg from "@/assets/vaccination.png";
 import labRadiologyImg from "@/assets/lab-radiology.png";
 import surgeryImg from "@/assets/surgeries.png";
-import fluffyWheelsImg from "@/assets/fluffy-wheels.png";
+import fluffyWheelsImg from "@/assets/vet-way.jpeg";
 import cardiologyImg from "@/assets/cardiology.png";
 
 const SERVICE_KEYS = [
@@ -44,7 +44,7 @@ const SERVICE_IMAGE_ALT: Record<string, string> = {
   grooming: "Fluffy white Pomeranian looking fabulous",
   petHotel: "Cozy cat sleeping peacefully",
   labRadiology: "Curious cute orange tabby cat",
-  fluffyWheels: "Happy golden retriever enjoying a car ride",
+  fluffyWheels: "Vetway pet transportation service",
 };
 
 const SERVICE_COLORS = [
@@ -166,7 +166,7 @@ export function ServicesSection() {
                       height={470}
                       className={cn(
                         "w-full",
-                        key === "cardiology"
+                        key === "cardiology" || key === "fluffyWheels"
                           ? "h-auto object-contain"
                           : "h-[300px] object-cover md:h-[350px]"
                       )}
@@ -235,28 +235,56 @@ export function ServicesSection() {
                     )}
 
                     {/* CTA */}
-                    <Button
-                      variant="primary"
-                      size="sm"
-                      whatsappMessage={`${whatsappPrefix} ${t(`${key}.title`)}`}
-                      icon={
-                        <svg
-                          className="h-4 w-4"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          strokeWidth={2}
-                          stroke="currentColor"
+                    <div className="flex flex-wrap gap-3">
+                      <Button
+                        variant="primary"
+                        size="sm"
+                        whatsappMessage={`${whatsappPrefix} ${t(`${key}.title`)}`}
+                        icon={
+                          <svg
+                            className="h-4 w-4"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            strokeWidth={2}
+                            stroke="currentColor"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                            />
+                          </svg>
+                        }
+                      >
+                        {t(`${key}.cta`)}
+                      </Button>
+
+                      {key === "fluffyWheels" && (
+                        <Button
+                          variant="outline"
+                          size="sm"
+                          href={t(`${key}.website`)}
+                          external
+                          icon={
+                            <svg
+                              className="h-4 w-4"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              strokeWidth={2}
+                              stroke="currentColor"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                d="M12 21a9 9 0 100-18 9 9 0 000 18zm0 0a8.949 8.949 0 004.951-1.488M12 21a8.949 8.949 0 01-4.951-1.488M3.6 9h16.8M3.6 15h16.8M12 3a13.5 13.5 0 000 18 13.5 13.5 0 000-18z"
+                              />
+                            </svg>
+                          }
                         >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
-                          />
-                        </svg>
-                      }
-                    >
-                      {t(`${key}.cta`)}
-                    </Button>
+                          {t(`${key}.visitWebsite`)}
+                        </Button>
+                      )}
+                    </div>
                   </div>
                 </ScrollReveal>
               </div>

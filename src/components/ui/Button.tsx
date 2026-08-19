@@ -9,6 +9,7 @@ interface ButtonProps {
   size?: "sm" | "md" | "lg";
   whatsappMessage?: string;
   href?: string;
+  external?: boolean;
   onClick?: () => void;
   className?: string;
   icon?: React.ReactNode;
@@ -37,6 +38,7 @@ export function Button({
   size = "md",
   whatsappMessage,
   href,
+  external,
   onClick,
   className,
   icon,
@@ -52,12 +54,14 @@ export function Button({
     ? getWhatsAppLink(whatsappMessage)
     : href;
 
+  const opensNewTab = Boolean(whatsappMessage) || external;
+
   if (finalHref) {
     return (
       <a
         href={finalHref}
-        target={whatsappMessage ? "_blank" : undefined}
-        rel={whatsappMessage ? "noopener noreferrer" : undefined}
+        target={opensNewTab ? "_blank" : undefined}
+        rel={opensNewTab ? "noopener noreferrer" : undefined}
         className={classes}
       >
         {icon && <span className="shrink-0">{icon}</span>}

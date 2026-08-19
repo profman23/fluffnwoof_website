@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { useTranslations, useLocale } from "next-intl";
 import Image from "next/image";
-import popupImg from "@/assets/popup.png";
+import popupImg from "@/assets/popup-2.png";
 import { Button } from "@/components/ui/Button";
 
 interface DoctorProfileCardProps {

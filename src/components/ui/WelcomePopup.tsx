@@ -5,7 +5,7 @@ import { createPortal } from "react-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslations, useLocale } from "next-intl";
 import Image from "next/image";
-import popupImg from "@/assets/popup.png";
+import popupImg from "@/assets/popup-2.png";
 import { DoctorProfileCard } from "./DoctorProfileCard";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 

@@ -113,11 +113,13 @@
       "cta": "Get a Consultation Now"
     },
     "fluffyWheels": {
-      "title": "Fluffy Wheels",
-      "description": "At our clinic, we understand that transporting your pet can sometimes be a challenge. That's why we offer Fluffy Wheels, a convenient pet transportation service designed to make getting your pet to us easier and stress-free.",
+      "title": "Vetway",
+      "description": "At our clinic, we understand that transporting your pet can sometimes be a challenge. That's why we offer Vetway, a convenient pet transportation service designed to make getting your pet to us easier and stress-free.",
       "extendedDescription": "Whether your pet needs a grooming session, medical check-up, vaccination, surgical procedures, or even a temporary stay, our team ensures they arrive safely and comfortably. Our vehicles are specially equipped to provide a comfortable journey for your pets.",
       "bullets": [],
-      "cta": "Book Now & Pamper Your Pet"
+      "cta": "Book Now & Pamper Your Pet",
+      "website": "https://www.vetway.org",
+      "visitWebsite": "Visit Website"
     }
   },
   "about": {
@@ -229,13 +231,13 @@
         "spec_3": "Therapeutic Nutrition"
       },
       "wasfy-nasseh": {
-        "name": "Dr. Wasfy Nasseh, DVM",
-        "title": "Veterinary Surgeon & Exotic Animal Medicine Specialist",
-        "bio_1": "Doctor of Veterinary Medicine (DVM) specializing in small animal medicine.",
-        "bio_2": "Postgraduate Diploma in Wild Animals & Exotic Medicine.",
+        "name": "Dr. Reda",
+        "title": "Veterinary Surgeon & Internal Medicine Specialist",
+        "bio_1": "+7 Years Expertise in Small Animal Field.",
+        "bio_2": "Surgeries, Diagnostic Imaging & Complicated Cases.",
         "spec_1": "Small Animal Medicine",
-        "spec_2": "Wild & Exotic Animals",
-        "spec_3": "Veterinary Surgery"
+        "spec_2": "Surgery",
+        "spec_3": "Diagnostic Imaging"
       },
       "ahmed-mandour": {
         "name": "Prof. Ahmed Mandour, PhD",
