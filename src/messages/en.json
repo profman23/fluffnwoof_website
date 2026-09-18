@@ -124,8 +124,8 @@
   },
   "about": {
     "sectionTitle": "Our Story",
-    "story": "Fluff N' Woof is the dream of a physician who is an animal lover and passionate breeder. He always wished to find advanced veterinary care worthy of his beloved pet, whom he lost due to a veterinary error during his first year in medical school.",
-    "storyExtended": "This inspired him to open a veterinary hospital that rises to the quality standards of human hospitals, offering the latest and most advanced treatment methods that science has achieved. Our motto is \"Your Pet, Our Care\".",
+    "story": "Fluff N' Woof was born from the dream of a physician and passionate animal lover. He had always wished to find advanced veterinary care worthy of his beloved pet, whom he lost due to a veterinary error during his first year of medical school.",
+    "storyExtended": "This inspired him to establish a veterinary hospital that meets the quality standards of human hospitals, offering the latest and most advanced treatments available in veterinary medicine. Our motto is: \"Your Pet, Our Care.\"",
     "topClinic": "We are proud to be among the top",
     "topClinicHighlight": "3 clinics in the Kingdom!",
     "highlights": {
@@ -137,7 +137,7 @@
       "years": { "value": "15", "suffix": "+", "label": "Years of Experience" },
       "reviews": { "value": "800", "suffix": "+", "label": "5-Star Reviews" },
       "happyPets": { "value": "20000", "suffix": "+", "label": "Happy Pets" },
-      "surgeries": { "value": "6500", "suffix": "+", "label": "Successful Surgeries" }
+      "surgeries": { "value": "8500", "suffix": "+", "label": "Successful Surgeries" }
     }
   },
   "testimonials": {
